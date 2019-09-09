@@ -61,14 +61,14 @@
 </script>
 
   <meta name="description" content="本文属于转载,因为发现挺重要,所以在此记录下 生产者和消费者问题是线程模型中的经典问题：生产者和消费者在同一时间段内共用同一个存储空间，生产者往存储空间中添加产品，消费者从存储空间中取走产品，当存储空间为空时，消费者阻塞，当存储空间满时，生产者阻塞。  wait()和notify()方法的实现 缓冲区满和为空时都调用wait()方法等待，当生产者生产了一个产品或者消费者消费了一个产品之后会唤醒所">
-<meta name="keywords" content="basic">
+<meta name="keywords" content="thread">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java实现生产者与消费者">
 <meta property="og:url" content="https://helloworld-liushijie.github.io/2019/08/11/Java实现生产者与消费者/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="本文属于转载,因为发现挺重要,所以在此记录下 生产者和消费者问题是线程模型中的经典问题：生产者和消费者在同一时间段内共用同一个存储空间，生产者往存储空间中添加产品，消费者从存储空间中取走产品，当存储空间为空时，消费者阻塞，当存储空间满时，生产者阻塞。  wait()和notify()方法的实现 缓冲区满和为空时都调用wait()方法等待，当生产者生产了一个产品或者消费者消费了一个产品之后会唤醒所">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-02T14:33:55.960Z">
+<meta property="og:updated_time" content="2019-09-09T14:14:22.535Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java实现生产者与消费者">
 <meta name="twitter:description" content="本文属于转载,因为发现挺重要,所以在此记录下 生产者和消费者问题是线程模型中的经典问题：生产者和消费者在同一时间段内共用同一个存储空间，生产者往存储空间中添加产品，消费者从存储空间中取走产品，当存储空间为空时，消费者阻塞，当存储空间满时，生产者阻塞。  wait()和notify()方法的实现 缓冲区满和为空时都调用wait()方法等待，当生产者生产了一个产品或者消费者消费了一个产品之后会唤醒所">
@@ -306,7 +306,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-09-02 22:33:55" itemprop="dateModified" datetime="2019-09-02T22:33:55+08:00">2019-09-02</time>
+                <time title="Modified: 2019-09-09 22:14:22" itemprop="dateModified" datetime="2019-09-09T22:14:22+08:00">2019-09-09</time>
               </span>
             
           
@@ -318,7 +318,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/thread/" itemprop="url" rel="index"><span itemprop="name">thread</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/基础/" itemprop="url" rel="index"><span itemprop="name">基础</span></a></span>
 
                 
                 
@@ -485,7 +485,7 @@
           
         
         <div class="post-tags">
-            <a href="/tags/basic/" class="fa fa-tag">basic</a>
+            <a href="/tags/thread/" class="fa fa-tag">thread</a>
           
         </div>
         <div class="post-nav">
@@ -592,15 +592,7 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span>
         </a>
       </div>
@@ -633,15 +625,7 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
