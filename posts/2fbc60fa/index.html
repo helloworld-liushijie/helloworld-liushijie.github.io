@@ -376,6 +376,24 @@
                 <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
               </span>
             </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/posts/2fbc60fa/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2fbc60fa/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           <br>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -574,6 +592,9 @@
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
 
 
@@ -904,6 +925,30 @@
 
 
 
+
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'bIaIoboPJMGaUxlTktaOb69H-gzGzoHsz',
+    appKey: '9vk2nQvT9GlKL35uTTt8ntCN',
+    placeholder: 'Just go go',
+    avatar: 'retro',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 	
 
