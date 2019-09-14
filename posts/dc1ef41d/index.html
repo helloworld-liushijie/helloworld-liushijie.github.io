@@ -74,7 +74,7 @@
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/dc1ef41d/imgs/20190912-231104.png">
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/dc1ef41d/imgs/20190912-232415.png">
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/dc1ef41d/imgs/20190912-234937.png">
-<meta property="og:updated_time" content="2019-09-13T02:21:54.212Z">
+<meta property="og:updated_time" content="2019-09-13T02:27:44.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery插件$.fn">
 <meta name="twitter:description" content="因为这段时间一直在做后端的开发,再加上以前对$.fn有点儿不清楚,所以专门写篇博客加深理解,错误的地方希望指正。($.fn即jQuery.fn)  $.fn源码jQuery.fn源码:从源码可以看出$.fn实际就是jQuery的原型,生成一个Object实例对象 123456789101112jQuery.fn = jQuery.prototype = &amp;#123;	// The current">
@@ -335,7 +335,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-09-13 10:21:54" itemprop="dateModified" datetime="2019-09-13T10:21:54+08:00">2019-09-13</time>
+                <time title="修改时间：2019-09-13 10:27:44" itemprop="dateModified" datetime="2019-09-13T10:27:44+08:00">2019-09-13</time>
               </span>
             
           
@@ -444,7 +444,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">"edit"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">        jQuery.fn.extend (&#123;</span><br><span class="line"><span class="javascript">            alertWhileClick: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                $(<span class="keyword">this</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                    alert($(<span class="keyword">this</span>).val());</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line"><span class="javascript">        $(<span class="string">"#edit"</span>).alertWhileClick();</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="imgs/20190912-232415.png" alt></p>
-<h4 id="extend"><a href="#extend" class="headerlink" title="$.extend"></a>$.extend</h4><blockquote>
+<h3 id="extend"><a href="#extend" class="headerlink" title="$.extend"></a>$.extend</h3><blockquote>
 <p>Description: Merge the contents of two or more objects together into the first object.<br>(大意是将两个或多个对象的内容合并到<code>第一个对象</code>中。)</p>
 </blockquote>
 <p>示例:实例对象合并</p>
@@ -700,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#fn"><span class="nav-number">1.</span> <span class="nav-text">$.fn</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#源码"><span class="nav-number">1.1.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fn进行扩展"><span class="nav-number">1.2.</span> <span class="nav-text">$.fn进行扩展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fn-extend"><span class="nav-number">2.</span> <span class="nav-text">$.fn.extend</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#extend"><span class="nav-number">2.1.</span> <span class="nav-text">$.extend</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number"></span> <span class="nav-text"></span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#fn"><span class="nav-number">1.</span> <span class="nav-text">$.fn</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#源码"><span class="nav-number">1.1.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fn进行扩展"><span class="nav-number">1.2.</span> <span class="nav-text">$.fn进行扩展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fn-extend"><span class="nav-number">2.</span> <span class="nav-text">$.fn.extend</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extend"><span class="nav-number">3.</span> <span class="nav-text">$.extend</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number"></span> <span class="nav-text"></span></a></div>
             
 
           </div>
