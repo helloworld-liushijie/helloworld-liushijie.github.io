@@ -79,7 +79,7 @@
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/d9b5c3c/imgs/20190918-232027.png">
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/d9b5c3c/imgs/20190919-224029.png">
 <meta property="og:image" content="https://helloworld-liushijie.github.io/posts/d9b5c3c/imgs/20190920-225325.png">
-<meta property="og:updated_time" content="2019-09-20T15:56:50.538Z">
+<meta property="og:updated_time" content="2019-09-23T06:00:54.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="elasticsearch上手">
 <meta name="twitter:description" content="ElasticSearch遵循restful风格;该文章只是elasticsearch入门不做详细阐述,详细信息请查看官方文档  docker安装ElasticeSearch1234567## pull ElasticSearchdocker pull elasticsearch## create networkdocker network create somenetwork## docker">
@@ -327,7 +327,7 @@
                 
               
 
-              <time title="创建时间：2019-09-20 23:56:50" itemprop="dateCreated datePublished" datetime="2019-09-20T23:56:50+08:00">2019-09-20</time>
+              <time title="创建时间：2019-09-23 14:00:54" itemprop="dateCreated datePublished" datetime="2019-09-23T14:00:54+08:00">2019-09-23</time>
             </span>
           
             <span class="post-meta-item">
@@ -418,7 +418,7 @@
 
 <a id="more"></a>
 <h2 id="ElasticSearch测试"><a href="#ElasticSearch测试" class="headerlink" title="ElasticSearch测试"></a>ElasticSearch测试</h2><blockquote>
-<p>示例参考权威指南中文版:索引员工文档(此处使用postman来进行测试)。<br>DELEATE,HEAD请求有兴趣的朋友可以试下,这儿就不试一了</p>
+<p>示例参考权威指南中文版:索引员工文档(此处使用postman来进行测试)。<br>DELEATE,HEAD请求有兴趣的朋友可以试下,这儿就不一一试了</p>
 </blockquote>
 <p><img src="imgs/20190917-221901.png" alt></p>
 <h3 id="PUT请求"><a href="#PUT请求" class="headerlink" title="PUT请求"></a>PUT请求</h3><p><img src="imgs/20190917-220859.png" alt></p>
@@ -450,7 +450,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Article</span> </span>&#123;</span><br><span class="line">    <span class="meta">@JestId</span></span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String author;</span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line">    <span class="keyword">private</span> String content;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>测试类</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@Autowired</span><br><span class="line">JestClient jestClient;</span><br><span class="line"></span><br><span class="line">@Test</span><br><span class="line">public void contextLoads() throws IOException &#123;</span><br><span class="line">     //1.给Es索引(保存)一个文档</span><br><span class="line">     Article article = new Article();</span><br><span class="line">     article.setId(1);</span><br><span class="line">     article.setAuthor(&quot;john&quot;);</span><br><span class="line">     article.setTitle(&quot;震惊!...&quot;);</span><br><span class="line">     article.setContent(&quot;page&quot;);</span><br><span class="line"></span><br><span class="line">     //索引.类型.编号(类似:/megacorp/employee/1示例,此处已经在bean里面指定了id)</span><br><span class="line">     Index index = new Index.Builder(article).index(&quot;lsj&quot;).type(&quot;article&quot;).build();</span><br><span class="line">     jestClient.execute(index);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">JestClient jestClient;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">     <span class="comment">//1.给Es索引(保存)一个文档</span></span><br><span class="line">     Article article = <span class="keyword">new</span> Article();</span><br><span class="line">     article.setId(<span class="number">1</span>);</span><br><span class="line">     article.setAuthor(<span class="string">"john"</span>);</span><br><span class="line">     article.setTitle(<span class="string">"震惊!..."</span>);</span><br><span class="line">     article.setContent(<span class="string">"page"</span>);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//索引.类型.编号(类似:/megacorp/employee/1示例,此处已经在bean里面指定了id)</span></span><br><span class="line">     Index index = <span class="keyword">new</span> Index.Builder(article).index(<span class="string">"lsj"</span>).type(<span class="string">"article"</span>).build();</span><br><span class="line">     jestClient.execute(index);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>发送请求进行测试<br><img src="imgs/20190918-232027.png" alt></p>
 </li>
