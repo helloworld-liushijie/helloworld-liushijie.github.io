@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://helloworld-liushijie.github.io/posts/4206c037/</loc>
+    
+    <lastmod>2019-09-23T06:25:08.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://helloworld-liushijie.github.io/posts/d9b5c3c/</loc>
     
     <lastmod>2019-09-23T06:00:54.465Z</lastmod>
@@ -100,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://helloworld-liushijie.github.io/photos/index.html</loc>
+    <loc>https://helloworld-liushijie.github.io/categories/index.html</loc>
     
     <lastmod>2019-09-02T14:33:55.992Z</lastmod>
     
@@ -114,7 +121,7 @@
   </url>
   
   <url>
-    <loc>https://helloworld-liushijie.github.io/categories/index.html</loc>
+    <loc>https://helloworld-liushijie.github.io/photos/index.html</loc>
     
     <lastmod>2019-09-02T14:33:55.992Z</lastmod>
     
