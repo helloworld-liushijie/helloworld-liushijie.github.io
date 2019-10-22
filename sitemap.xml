@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://helloworld-liushijie.github.io/posts/f2244df3/</loc>
+    
+    <lastmod>2019-10-22T09:11:12.005Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://helloworld-liushijie.github.io/posts/1b392612/</loc>
     
-    <lastmod>2019-10-10T03:26:45.709Z</lastmod>
+    <lastmod>2019-10-10T03:42:38.517Z</lastmod>
     
   </url>
   
@@ -128,6 +135,13 @@
   </url>
   
   <url>
+    <loc>https://helloworld-liushijie.github.io/about/index.html</loc>
+    
+    <lastmod>2019-09-02T14:33:55.992Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://helloworld-liushijie.github.io/categories/index.html</loc>
     
     <lastmod>2019-09-02T14:33:55.992Z</lastmod>
@@ -136,13 +150,6 @@
   
   <url>
     <loc>https://helloworld-liushijie.github.io/photos/index.html</loc>
-    
-    <lastmod>2019-09-02T14:33:55.992Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://helloworld-liushijie.github.io/about/index.html</loc>
     
     <lastmod>2019-09-02T14:33:55.992Z</lastmod>
     

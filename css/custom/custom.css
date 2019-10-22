@@ -15,10 +15,11 @@
   top: calc(100vh - 900px - 200px);
 }
 body {
-  background: url("/images/background.jpg");
+/**background:url(/images/background.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-attachment:fixed;
+  background-size:100% 100%;**/
+  background-color: #9dc3c1;
 }
 .post {
   margin-top: 60px;
