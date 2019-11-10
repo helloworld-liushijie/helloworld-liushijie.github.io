@@ -38,6 +38,6 @@ body {
     display: none;
   }
   #_hj_feedback_container {
-    display: none;
+    display: none !important;
   }
 }
