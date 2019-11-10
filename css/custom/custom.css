@@ -30,3 +30,8 @@ body {
 /*.post-comments-count {
   display: none;
 }*/
+@media (max-width: 1000px) {
+  #tidio-chat {
+    display: none;
+  }
+}
