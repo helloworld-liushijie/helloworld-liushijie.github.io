@@ -1709,7 +1709,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #1cd9ff;
+  background: #fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2376,12 +2376,29 @@ ul.breadcrumb li+li:last-child {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
 }
+body {
+/**background:url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;**/
+  background-color: rgba(142,192,228,0.4);
+}
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
-  padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+@media (max-width: 1000px) {
+  #tidio-chat {
+    display: none;
+  }
+  .back-to-top.back-to-top-on {
+    display: none;
+  }
+  #_hj-f5b2a1eb-9b07_feedback_minimized {
+    display: none;
+  }
 }
 .header {
   margin: 0 auto;

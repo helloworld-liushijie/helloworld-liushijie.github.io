@@ -34,4 +34,10 @@ body {
   #tidio-chat {
     display: none;
   }
+  .back-to-top.back-to-top-on {
+    display: none;
+  }
+  #_hj_feedback_container {
+    display: none;
+  }
 }
