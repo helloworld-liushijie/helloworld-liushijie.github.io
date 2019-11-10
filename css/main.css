@@ -1709,7 +1709,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9d1a6b;
+  background: #ff94d0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2388,6 +2388,9 @@ body {
   margin-bottom: 60px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.site-meta {
+  background: linear-gradient(90deg, #81ffef, #f067b4);
 }
 @media (max-width: 1000px) {
   #tidio-chat {
