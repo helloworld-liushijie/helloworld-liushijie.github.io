@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size:100% 100%;**/
-  background-color: #9dc3c1;
+  background-color: rgba(142,192,228,0.4);
 }
 .post {
   margin-top: 60px;
